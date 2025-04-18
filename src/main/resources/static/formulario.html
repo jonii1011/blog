@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Formulario del Blog</title>
+  <script src="formulario.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+  <h1 id="form-title" class="mb-4 text-center">Crear Blog</h1>
+  <form id="blog-form">
+    <input type="hidden" id="blog-id">
+    <div class="form-group">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="contenido">Contenido</label>
+      <textarea id="contenido" class="form-control" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="autor">Autor</label>
+      <input type="text" id="autor" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="fecha">Fecha de publicación</label>
+      <input type="date" id="fecha" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <select id="estado" class="form-control">
+        <option value="BORRADOR">BORRADOR</option>
+        <option value="PUBLICADO">PUBLICADO</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-success btn-block">Guardar</button>
+  </form>
+</div>
+</body>
+</html>
